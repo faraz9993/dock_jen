@@ -1,5 +1,5 @@
 node {
-    def dockerRegistry = 'https://hub.docker.com/repository/docker/fansari9993/test9/general'
+    def dockerRegistry = 'https://registry.hub.docker.com'
     def dockerCredentialsId = 'dockerhub-credentials-id'
     def imageName = 'fansari9993/test9'
     def imageTag = 'tagname'
