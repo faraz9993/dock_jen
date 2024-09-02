@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Image</title>
+    <style>
+        #image {
+            display: none;
+            margin-top: 20px;
+            width: 500px;  /* Adjust width as needed */
+            height: auto;  /* Maintain aspect ratio */
+        }
+    </style>
+</head>
+<body>
+    <p>To access S3 bucket image:</p>
+    <button id="showImageBtn">Show Image</button>
+    <img id="image" src="https://kauserbucket.s3.us-east-2.amazonaws.com/car.jpeg" alt="Car Image">
+
+    <script>
+        document.getElementById('showImageBtn').addEventListener('click', function() {
+            var img = document.getElementById('image');
+            img.style.display = img.style.display === 'none' ? 'block' : 'none';
+        });
+    </script>
+</body>
+</html>
+
