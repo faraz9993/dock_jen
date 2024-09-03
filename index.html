@@ -1,21 +1,34 @@
-<!DOCTYPE html>
+u<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Display Image</title>
     <style>
+        body {
+            text-align: center;
+        }
+        #access-section {
+            text-align: left;
+            margin-left: 20px;
+        }
         #image {
             display: none;
             margin-top: 20px;
-            width: 500px;  /* Adjust width as needed */
-            height: auto;  /* Maintain aspect ratio */
+            width: 500px;
+            height: auto;
         }
     </style>
 </head>
 <body>
-    <p>To access S3 bucket image:</p>
-    <button id="showImageBtn">Show Image</button>
+    <h1>Welcome to e-commerce website.</h1>
+    <p>You can buy many things here.</p>
+
+    <div id="access-section">
+        <p>To access S3 bucket image:</p>
+        <button id="showImageBtn">Show Image</button>
+    </div>
+
     <img id="image" src="https://kauserbucket.s3.us-east-2.amazonaws.com/car.jpeg" alt="Car Image">
 
     <script>
